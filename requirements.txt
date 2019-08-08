@@ -1,0 +1,13 @@
+arrow==0.13.0
+b2blaze==0.2.1
+certifi==2019.6.16
+chardet==3.0.4
+funcsigs==1.0.2
+idna==2.7
+logfury==0.1.2
+pkg-resources==0.0.0
+python-dateutil==2.8.0
+requests==2.19.1
+six==1.12.0
+tqdm==4.32.2
+urllib3==1.23
