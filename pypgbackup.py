@@ -4,6 +4,7 @@ import datetime
 import os
 import getpass
 import tempfile
+import sys
 
 def get_dt_format():
     """
@@ -76,8 +77,8 @@ def create_backup(host, port, user, password, database, directory):
            '-Fc', '-Z9',
            '-d', database]
 
-    completed_process = subprocess.run(' '.join(cmd), shell=True, capture_output=True)
-    assert completed_process.returncode == 0
+    completed_process = subprocess.run(' '.join(cmd), shell=True, stdout=subprocess.PIPE, stderr=sys.stdout)
+    assert completed_process.returncode == 0, completed_process.stdout
     
     return filepath
 
