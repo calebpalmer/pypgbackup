@@ -109,7 +109,7 @@ def upload_to_b2_bucket(filepath, bucket_name, prefix):
         
     with open(filepath, 'rb') as f:
         bucket.files.upload(contents=f,
-                            file_name=os.path.basename(filepath))
+                            file_name=prefix + os.path.basename(filepath))
 
 def main():
     parser = create_arg_parser()
