@@ -1,4 +1,4 @@
-arrow==0.13.0
+arrow==0.15.1
 b2blaze==0.2.1
 certifi==2019.6.16
 chardet==3.0.4
